@@ -25,10 +25,6 @@ app.get('/pair', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'pair.html'));
 });
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
-
 app.listen(PORT, () => {
     console.log(`
 Deployment Successful!
